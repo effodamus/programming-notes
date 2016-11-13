@@ -1,0 +1,115 @@
+\subsection{Text processing}
+% \textbf{aspell} is an interactive spell checker.
+
+\textbf{awk}.
+
+\textbf{banner}
+
+\textbf{basename}
+
+\textbf{comm}
+
+\textbf{csplit}
+
+\textbf{cut}* removes sections from each line of files:
+\begin{enumx}
+	\item [\texttt{d}] uses ,,delim'' instead of Tab for field delimeter,
+	\item [\texttt{f}] selects only these fields.
+\end{enumx}
+
+\textbf{diff}
+
+\textbf{dirname}
+
+\textbf{ed}
+
+\textbf{ex}
+
+\textbf{fmt}
+
+\textbf{fold}
+
+\textbf{head}* outputs the first part of files:
+\begin{enumx}
+	\item [\texttt{c}] the first ,,num'' bytes,
+	\item [\texttt{n}] the first ,,num'' lines.
+\end{enumx}
+
+\textbf{iconv}
+
+\textbf{join}
+
+\textbf{less} is opposite of more.
+
+\textbf{more} is a file perusal filter for crt viewing.
+
+\textbf{nl*} numbers lines of files:
+\begin{enumx}
+	\item [\texttt{s}] adds ,,string'' after line number,
+	\item [\texttt{w}] uses ,,number'' columns for line numbers.
+\end{enumx}
+
+\textbf{paste}
+
+\textbf{printf}
+
+\textbf{sed}
+
+\textbf{shuf*} generates random permutations:
+\begin{enumx}
+	\item [\texttt{e}] treats each ,,arg'' as an input line,
+	\item [\texttt{i}] treats each number .. through .. as an input line, 
+	\item [\texttt{n}] outputs at most ,,count'' lines,
+	\item [\texttt{r}] output lines can be repeated (with \texttt{-n}).
+\end{enumx}
+
+\textbf{sort}* sorts lines of text files:
+\begin{enumx}
+	\item [\texttt{g}] compares general numerical values,
+	\item [\texttt{h}] compares human readable numbers,
+	\item [\texttt{n}] compares string numerical values,
+	\item [\texttt{r}] reverses the results.
+\end{enumx}
+
+\textbf{strings}
+
+\textbf{tail}* outputs the last part of files:
+\begin{enumx}
+	\item [\texttt{c}] the last ,,num'' bytes,
+	\item [\texttt{f}] outputs appended data as the file grows,
+	\item [\texttt{n}] the last ,,num'' lines.
+\end{enumx}
+
+\textbf{tr}* translates or deletes characters:
+\begin{enumx}
+	\item \texttt{tr abc xyz} changes \texttt{a} to \texttt{x}, $\ldots$,
+	\item [c] uses the complement of ,,set1'',
+	\item [d] deletes characters, does not translate,
+	\item [s] replaces each sequence of a repeated character that is listed 
+	in the last specified ,,set'' with a single occurrence of that character.
+\end{enumx}
+
+\textbf{uniq*} omits repeated lines:
+\begin{enumx}
+	\item [\texttt{c}] prefixes lines by the number of occurences
+	\item [\texttt{d}] only prints duplicate lines, one for each group
+	\item [\texttt{f}] avoids comparing first fields
+	\item [\texttt{i}] ignores differences in case
+	\item [\texttt{s}] avoids comparing first characters
+	\item [\texttt{w}] compares no more than $n$ characters
+\end{enumx}
+
+\textbf{vi} 
+
+\textbf{wc}* prints newline, word and byte counts:
+\begin{enumx}
+	\item [\texttt{c}] prints the byte counts,
+	\item [\texttt{l}] prints the newline counts,
+	\item [\texttt{m}] prints the character counts,
+	\item [\texttt{w}] prints the word counts.
+\end{enumx}
+
+\textbf{xargs}
+
+\textbf{yes}
+
