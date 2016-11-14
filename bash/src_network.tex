@@ -40,6 +40,12 @@ packets across an Internet Protocol (IP) network.
 
 \textbf{wget} is a non-interactive network downloader.
 \begin{enumx}
-	\item [\texttt{c}]
-	\item [\texttt{r}]
+	\item [\texttt{A}, \texttt{R}] specifies lists 	of file suffixes or 
+	patterns (when wildcard characters appear) to accept or reject.
+	\item [\texttt{b}] goes to background immediately after startup.
+	\item [\texttt{c}] continues getting a partially-downloaded file.
+	\item [\texttt{m}] turns on options suitable for mirroring: infinite recursion and time-stamping.
+	\item [\texttt{np}] does not ever ascend to the parent directory when retrieving recursively.
+	\item [\texttt{U}] identifies as ,,agent-string'' to the HTTP server.
+	\item [\texttt{w}] waits the specified number of seconds between the retrievals (see also \texttt{--random-wait}).
 \end{enumx}
