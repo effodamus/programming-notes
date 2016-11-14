@@ -19,7 +19,13 @@ interface statistics, masquerade connections, and multicast memberships.
 
 \textbf{nslookup} queries Internet name servers interactively.
 
-\textbf{ping} sends ICMP ECHO\_REQUEST to network hosts.
+\textbf{ping} tests the reachability of a host 
+on an IP network by sending ICMP ECHO\_REQUEST:
+\begin{enumx}
+	\item [\texttt{c}] stops after sending ,,count'' packets,
+	\item [\texttt{n}] numeric output only, 
+	avoids to lookup symbolic names for host addresses. 
+\end{enumx}
 
 \textbf{rdate} sets the system's date from a remote host.
 
