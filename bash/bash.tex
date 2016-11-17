@@ -38,11 +38,11 @@
 \usepackage{Alegreya}
 
 \newcommand{\manualbreak}{\vspace*{\fill}\columnbreak}
-
-\usepackage[polish]{babel}
+ 
+%\usepackage[polish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\selectlanguage{polish}
+%\selectlanguage{polish}
 
 
 \begin{document}
@@ -52,7 +52,7 @@
 \fancyfoot[RF]{author: Remigiusz Suwalski}
 \fancyfoot[LF]{page \thepage/\pageref{LastPage}}
 
-\begin{multicols}{3}
+\begin{multicols*}{3}
 \raggedright
 \section{Unix utilities and shell builtins}
 The GNU Core Utilities are the basic file, shell and text manipulation 
@@ -70,7 +70,7 @@ utilities (marked here with a star*) of the GNU operating system.
 \input{src_rest}
 
 \input{shortcuts}
-\end{multicols}
+\end{multicols*}
 
 \newpage
 \begin{multicols}{2}
