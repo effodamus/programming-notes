@@ -1,33 +1,32 @@
 \subsection{Text processing}
 % \textbf{aspell} is an interactive spell checker.
 
-\textbf{awk}.
+\textbf{awk} is a pattern scanning and processing language.
 
-\textbf{banner}
+%\textbf{banner}
 
-\textbf{basename}
+\textbf{basename} strips directory and suffix from filenames, 
+\textbf{dirname} strip last component from file name.
 
-\textbf{comm}
+\textbf{comm} compares two sorted files line by line.
 
-\textbf{csplit}
+\textbf{csplit} splits a file into sections determined by context lines.
 
+\textbf{join} joins lines of two files on a common field.
+\textbf{paste} merges lines of files.
 \textbf{cut}* removes sections from each line of files:
 \begin{enumx}
 	\item [\texttt{d}] uses ,,delim'' instead of Tab for field delimeter,
 	\item [\texttt{f}] selects only these fields.
 \end{enumx}
 
-\textbf{diff}
+\textbf{diff} compares files line by line.
 
-\textbf{dirname}
+% \textbf{ed}
+% \textbf{ex}
 
-\textbf{ed}
-
-\textbf{ex}
-
-\textbf{fmt}
-
-\textbf{fold}
+\textbf{fmt} is a simple optimal text formatter, 
+\textbf{fold} wraps each input line to fit in specified width.
 
 \textbf{head}* outputs the first part of files:
 \begin{enumx}
@@ -35,13 +34,10 @@
 	\item [\texttt{n}] the first ,,num'' lines.
 \end{enumx}
 
-\textbf{iconv}
+\textbf{iconv} converts text from one character encoding to another.
 
-\textbf{join}
 
-\textbf{less} is opposite of more.
-
-\textbf{more} is a file perusal filter for crt viewing.
+\textbf{less} is opposite of \textbf{more}, a file perusal filter for crt viewing.
 
 \textbf{nl*} numbers lines of files:
 \begin{enumx}
@@ -49,11 +45,10 @@
 	\item [\texttt{w}] uses ,,number'' columns for line numbers.
 \end{enumx}
 
-\textbf{paste}
 
-\textbf{printf}
+\textbf{printf} formats and prints data.
 
-\textbf{sed}
+\textbf{sed} is a stream editor for filtering and transforming text.
 
 \textbf{shuf*} generates random permutations:
 \begin{enumx}
@@ -71,7 +66,7 @@
 	\item [\texttt{r}] reverses the results.
 \end{enumx}
 
-\textbf{strings}
+\textbf{strings} prints the strings of printable characters in files.
 
 \textbf{tail}* outputs the last part of files:
 \begin{enumx}
@@ -99,7 +94,7 @@
 	\item [\texttt{w}] compares no more than $n$ characters
 \end{enumx}
 
-\textbf{vi} 
+\textbf{vim} a programmers text editor.
 
 \textbf{wc}* prints newline, word and byte counts:
 \begin{enumx}
@@ -109,7 +104,6 @@
 	\item [\texttt{w}] prints the word counts.
 \end{enumx}
 
-\textbf{xargs}
+\textbf{xargs} builds and executes command lines from standard input.
 
-\textbf{yes}
-
+\textbf{yes} outputs a string repeatedly until killed.
