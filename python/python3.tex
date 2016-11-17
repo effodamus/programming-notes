@@ -1,0 +1,58 @@
+\documentclass[a4paper, 8pt]{extarticle}
+
+\usepackage[left=1.25cm, top=2.25cm, right=1.25cm, bottom=1.25cm]{geometry}
+\usepackage{multicol}
+
+\usepackage{fancyhdr}
+\makeatletter
+\fancypagestyle{mypagestyle}
+{\newpage \fancyfoot[C]{} \renewcommand{\footrulewidth}{0pt}}
+\makeatother
+\pagestyle{mypagestyle}
+\headsep 5pt                
+
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+
+\usepackage{enumitem}
+\newenvironment{enumx} {
+	\begin{enumerate}[leftmargin=*]
+	\setlength{\itemsep}{0pt}
+	\setlength{\parskip}{0pt}
+	\setlength{\parsep}{0pt}}
+{\end{enumerate}}
+\newenvironment{itemx} {
+	\begin{itemize}[leftmargin=*]
+	\setlength{\itemsep}{0pt}
+	\setlength{\parskip}{0pt}
+	\setlength{\parsep}{0pt}}
+{\end{itemize}}
+
+\usepackage{parskip}
+\usepackage{titlesec}
+\titlespacing\section{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\usepackage{lastpage}
+\usepackage{Alegreya}
+
+\newcommand{\manualbreak}{\vspace*{\fill}\columnbreak}
+ 
+%\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\selectlanguage{polish}
+
+\begin{document}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyhead[LE,LO]{Python 3 -- notes}
+\fancyhead[RO,RE]{date: \today}
+\fancyfoot[RF]{author: Remigiusz Suwalski}
+\fancyfoot[LF]{page \thepage/\pageref{LastPage}}
+
+\begin{multicols*}{3}
+\raggedright
+Python 3.
+\end{multicols*}
+\end{document}
