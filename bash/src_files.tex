@@ -106,7 +106,7 @@ error if existing).
 	\item [\texttt{r}] removes directories and their contents.
 \end{enumx}
 
-\textbf{rmdir} removes (empty) directories.
+% \textbf{rmdir} removes (empty) directories.
 
 \textbf{split}* splits a file into pieces:
 \begin{enumx}
@@ -125,7 +125,11 @@ error if existing).
 	\item [\texttt{k}] does not replace existing files when extracting
 \end{enumx}
 
-\textbf{tee} duplicates pipe content.
+\textbf{tee} (named after the T-splitter used in plumbing) duplicates pipe content:
+\begin{enumx}
+	\item [\texttt{a}] appends to the given files, does not overwrite,
+	\item [\texttt{i}] ignores interrupts.
+\end{enumx}
 
 \textbf{touch} changes file timestamps.
 
