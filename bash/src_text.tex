@@ -36,13 +36,15 @@
 \textbf{fmt} is a simple optimal text formatter, 
 \textbf{fold} wraps each input line to fit in specified width.
 
-\textbf{head}* (\textbf{tail}*) outputs the first (last) part of files:
 \begin{enumx}
-	\item [\texttt{c}] the first (last) ,,num'' bytes,
-	\item [\texttt{n}] the first (last),,num'' lines,
+	\item [\cmd] \textbf{head}* outputs the first (last) part of files:
+	\item [\texttt{c}] the first ,,num'' bytes,
+	\item [\texttt{n}] the first ,,num'' lines,
+	\item [\cmd] \textbf{tail*} the last ,,num'' bytes:
+	\item [\texttt{c}] the last ,,num'' bytes,
+	\item [\texttt{n}] the last ,,num'' lines,
 	\item [\texttt{f}] outputs appended data as the file grows,
 	\item [\texttt{s}] sleeps for approximately ,,n'' seconds between iteration 
-	                   (\texttt{-fs} work only with tail!).
 \end{enumx}
 
 \textbf{iconv} converts text from one character encoding to another.
