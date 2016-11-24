@@ -59,16 +59,16 @@
 
 \textbf{printf} formats and prints data.
 
-\textbf{shuf*} generates random permutations:
 \begin{enumx}
+	\item [\cmd] \textbf{shuf*} generates random permutations:
 	\item [\texttt{e}] treats each ,,arg'' as an input line,
 	\item [\texttt{i}] treats each number .. through .. as an input line, 
 	\item [\texttt{n}] outputs at most ,,count'' lines,
 	\item [\texttt{r}] output lines can be repeated (with \texttt{-n}).
 \end{enumx}
 
-\textbf{sort}* sorts lines of text files:
 \begin{enumx}
+	\item [\cmd] \textbf{sort}* sorts lines of text files:
 	\item [\texttt{g}] compares general numerical values,
 	\item [\texttt{h}] compares human readable numbers,
 	\item [\texttt{n}] compares string numerical values,
@@ -77,8 +77,8 @@
 
 \textbf{strings} prints the strings of printable characters in files.
 
-\textbf{tr} translates or deletes characters:
 \begin{enumx}
+	\item [\cmd] \textbf{tr} translates or deletes characters:
 	\item \texttt{tr abc xyz} changes \texttt{a} to \texttt{x}, $\ldots$,
 	\item [c] uses the complement of ,,set1'',
 	\item [d] deletes characters, does not translate,
@@ -86,8 +86,8 @@
 	in the last specified ,,set'' with a single occurrence of that character.
 \end{enumx}
 
-\textbf{uniq*} omits repeated lines:
 \begin{enumx}
+	\item [\cmd] \textbf{uniq*} omits repeated lines:
 	\item [\texttt{c}] prefixes lines by the number of occurences
 	\item [\texttt{d}] only prints duplicate lines, one for each group
 	\item [\texttt{f}] avoids comparing first fields
@@ -98,8 +98,8 @@
 
 % \textbf{vim} is a programmers text editor.
 
-\textbf{wc}* prints newline (\texttt{l}), word (\texttt{w}) and byte (\texttt{c}) counts:
 \begin{enumx}
+	\item [\cmd] \textbf{wc}* prints newline (\texttt{l}), word (\texttt{w}) and byte (\texttt{c}) counts:
 	%\item [\texttt{c}] prints the byte counts,
 	%\item [\texttt{l}] prints the newline counts,
 	\item [\texttt{m}] prints the character counts,
@@ -107,6 +107,8 @@
 	\item [\texttt{L}] prints the maximum display width.
 \end{enumx}
 
-\textbf{xargs} builds and executes command lines from standard input.
+\begin{enumx}
+	\item [\cmd] \textbf{xargs} builds and executes command lines from standard input.
+\end{enumx}
 
 \textbf{yes} outputs a string repeatedly until killed.
