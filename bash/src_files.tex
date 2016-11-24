@@ -33,21 +33,32 @@
 	\item [\texttt{b}] reads in binary mode,
 	\item [\texttt{c}] checks SHA sums read from the ,,files''.
 \end{enumx}
+
 %\textbf{cmp} compares two files byte by byte.
 
-\textbf{cp}* copies files and directories:
 \begin{enumx}
+	\item [\cmd] \textbf{cp}* copies files and directories:
 	\item [\texttt{a}] never follows symlinks, preserves all attributes,
-	\item [\texttt{b}] makes a backup of each existing destination file,
-	\item [\texttt{d}] nevers follows symlinks in ,,source'',
-	\item [\texttt{f}] removes an existing destination file if needed,
-	\item [\texttt{i}] prompts before overwrite,
-	\item [\texttt{r}] copies directories recursively,
+	\item [\texttt{d}] never follows symlinks in ,,source'',
 	\item [\texttt{l}] hard links files instead,
 	\item [\texttt{s}] makes symbolic links instead,
-	\item [\texttt{t}] copies all ,,source'' arguments into ,,directory'',
-	\item [\texttt{u}] copies only when the source file
-	 is newer than the destination file.
+	\item [\texttt{b}] makes a backup of each existing destination file,
+	\item [\texttt{f}] removes an existing destination file if needed,
+	\item [\texttt{i}] prompts before overwrite,
+	\item [\texttt{u}] copies only newer source files,
+	\item [\texttt{r}] copies directories recursively,
+	\item [\texttt{t}] copies all ,,source'' arguments into ,,directory''.
+	
+	\item [\cmd] \textbf{mv}* moves (renames) files:
+	\item [\texttt{b}] makes a backup of each existing destination file,
+	\item [\texttt{i}] prompts before overwriting,
+	\item [\texttt{f}] does not prompt before overwriting,
+	\item [\texttt{n}] does not overwrite existing destination files.
+	
+	\item [\cmd] \textbf{rm}* removes files or directories:
+	\item [\texttt{f}] never prompts,
+	\item [\texttt{i}] always prompts,
+	\item [\texttt{r}] removes directories and their contents.
 \end{enumx}
 
 \textbf{dd if=file of=file bs=bytes count=n} converts and copies a file:
