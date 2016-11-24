@@ -12,16 +12,18 @@
 	\item [\cmd] \textbf{rev} reverses lines characterwise.
 \end{enumx}
 
-\textbf{chmod} changes permissions of a file.
-\texttt{ugoa} controls whose permissions will be changed: 
-the owner (u), the group (g), other users (o) or all users (a).
-\texttt{+} adds selected file mode bits, \texttt{-} removes them, 
-\texttt{=} adds them and removes the unmentioned bits.
-\texttt{rwx} selects file mode bits for the affected users: 
-read (4), write (2), execute or search for directories (1).
-
-\textbf{chown} changes file owner and group,
-\textbf{chgrp} changes only group ownership.
+\begin{enumx}
+	\item [\cmd] \textbf{chgrp} changes group ownership.
+	
+	\item [\cmd] \textbf{chmod} changes permissions of a file:
+	\item [\texttt{ugoa}] permissions of the owner, group, other/all users,
+	\item [\texttt{+-=}] adds, removes or sets selected file mode bits,
+	\item [\texttt{rwx}] selects file mode bits: read/write/execute (4-2-1).
+	
+	\item [\cmd] \textbf{chown} changes owner of a file.
+	
+	\item [\cmd] \textbf{umask} set file mode creation mask.
+\end{enumx}
 
 \textbf{cksum} prints CRC checksum with byte count and 
 \textbf{shasum} computes or checks SHA message digests:
