@@ -1,10 +1,15 @@
 %!TEX root = bash.tex
 \subsection*{File system}
 \begin{enumx}
-		\item [\texttt{A}] shows nonprinting characters,
-		\item [\texttt{b}] numbers nonempty output lines,
-		\item [\texttt{n}] numbers all output lines,
-		\item [\texttt{s}] suppresses repeated empty output lines.
+	\item [\cmd] \textbf{cat}* concatenates and prints files,
+	
+	\item [\cmd] \textbf{tac}* does the same in reverse: % tac -r -s 'x|[^x]'
+	\item [\texttt{A}] shows nonprinting characters,
+	\item [\texttt{b}] numbers nonempty output lines,
+	\item [\texttt{n}] numbers all output lines,
+	\item [\texttt{s}] suppresses repeated empty output lines.
+	
+	\item [\cmd] \textbf{rev} reverses lines characterwise.
 \end{enumx}
 
 \textbf{chmod} changes permissions of a file.
