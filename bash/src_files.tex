@@ -89,9 +89,17 @@
 	\item [\cmd] \textbf{file} determines file type.
 \end{enumx}
 
-\textbf{fsck} checks and repairs a Linux filesystem.
+\begin{enumx}
+	\item [\cmd] \textbf{fsck} checks and repairs a Linux filesystem:
+	\item [\texttt{a}] automatically repairs (without any question!),
+	\item [\texttt{t}] specifies the type(s) of filesystem to be checked,
+	\item [\texttt{A}] tries to check all filesystems in one run,
+	\item [\texttt{M}] skips mounted filesystems,
+	\item [\texttt{R}] skips the root filesystem.
+\end{enumx}
 
-\textbf{fuser} identifies processes using files or sockets.
+% \textbf{fuser} identifies processes using files or sockets.
+
 
 \textbf{ln}* makes hard links between files
 (only in the same file system, does not work with directories):
